@@ -10,10 +10,14 @@
 
 ## Files
  * bin/handler-ansible.rb
+ *
+ *
+ *
 
 ## Usage
 
-```
+**handler-ansible**
+```json
 {
   "ansible: {
     "command": "/usr/bin/ansible-playbook",
@@ -21,7 +25,6 @@
   }
 }
 ```
-
 ## Installation
 
 Add the public key (if you haven’t already) as a trusted certificate

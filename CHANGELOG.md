@@ -2,3 +2,4 @@
 
 * no changes from sensu-community-plugins repos
 * no gem built yet
+* pinned development deps
