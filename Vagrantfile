@@ -62,6 +62,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
+  config.vm.define 'ubuntu12' do |ubuntu12|
+    ubuntu12.vm.box = vagrant_config['ubuntu12']['box']
+    ubuntu12.vm.provision 'chef_zero' do |chef|
+      chef.roles_path = vagrant_config['ubuntu12']['role_path']
+      vagrant_config['ubuntu14']['role'].each do |r|
+        chef.add_role(r)
+      end
+    end
+  end
+
   config.vm.define 'ubuntu14' do |ubuntu14|
     ubuntu14.vm.box = vagrant_config['ubuntu14']['box']
     ubuntu14.vm.provision 'chef_zero' do |chef|
