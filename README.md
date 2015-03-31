@@ -10,16 +10,14 @@
 
 ## Files
  * bin/handler-ansible.rb
- *
- *
- *
+
 
 ## Usage
 
 **handler-ansible**
 ```json
 {
-  "ansible: {
+  "ansible": {
     "command": "/usr/bin/ansible-playbook",
     "playbook": "playbook.yml"
   }
@@ -42,7 +40,7 @@ You can also download the key from /certs/ within each repository.
 
 #### Bundler
 
-Add *sensu-plugins-disk-checks* to your Gemfile and run `bundle install` or `bundle update`
+Add *sensu-plugins-ansible* to your Gemfile and run `bundle install` or `bundle update`
 
 #### Chef
 
