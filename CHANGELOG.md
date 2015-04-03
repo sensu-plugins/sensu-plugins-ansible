@@ -9,4 +9,6 @@
 * fix failing tests
 * build initial gem
 * update Vagrantfile to use Chef
-* add metadat to gemspec
+* add metadata to gemspec
+* add new version and bump tasks
+* add new version module
