@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.metadata               = { 'maintainer'         => '',
                                'development_status' => 'unmaintained',
                                'production_status'  => 'unstable - testing reccomended',
-                               'releae_draft'       => 'false',
+                               'release_draft'       => 'false',
                                'release_prerelease' => 'false'
                                }
   s.name                   = 'sensu-plugins-ansible'
