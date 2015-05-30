@@ -12,7 +12,6 @@
 ## Files
  * bin/handler-ansible.rb
 
-
 ## Usage
 
 **handler-ansible**
