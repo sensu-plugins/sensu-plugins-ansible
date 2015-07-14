@@ -1,6 +1,6 @@
 ## Sensu-Plugins-ansible
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-ansible.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-ansible)
+[ ![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-ansible.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-ansible)
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-ansible.svg)](http://badge.fury.io/rb/sensu-plugins-ansible)
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ansible/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ansible)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ansible/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ansible)
