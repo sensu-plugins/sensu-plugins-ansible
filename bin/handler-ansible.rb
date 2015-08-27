@@ -40,7 +40,7 @@ require 'json'
 # Ansible
 #
 class Ansible < Sensu::Handler
-  def handle # rubocop:disable all
+  def handle
     ansible = settings['ansible']['command'] || 'ansible-playbook'
     playbook = settings['ansible']['playbook'] || nil
     extra_vars = JSON.generate(@event)
