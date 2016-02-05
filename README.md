@@ -5,7 +5,6 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ansible/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ansible)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ansible/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ansible)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-ansible.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-ansible)
-[![Codeship Status for sensu-plugins/sensu-plugins-ansible](https://codeship.com/projects/3192fe00-d4b5-0132-4979-16774c8da8c5/status?branch=master)](https://codeship.com/projects/77869)
 
 ## Functionality
 

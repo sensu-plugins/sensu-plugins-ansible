@@ -1,19 +1,36 @@
 language: ruby
 cache:
-  - bundler
+- bundler
+before_install:
+- openssl aes-256-cbc -K $encrypted_bcb89434cd4a_key -iv $encrypted_bcb89434cd4a_iv
+  -in certs/pvt_key -out certs/gem-private_key.pem -d
 install:
-  - bundle install
+- bundle install
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1
-  - 2.2
+- 1.9.3
+- 2.0
+- 2.1
+- 2.2
 notifications:
   email:
     recipients:
-      - sensu-plugin@sensu-plugins.io
+    - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
-
 script:
-  - 'bundle exec rake default'
+- bundle exec rake default
+- gem build sensu-plugins-ansible.gemspec
+- gem install sensu-plugins-ansible-*.gem
+deploy:
+  provider: rubygems
+  api_key:
+    secure: fps99s2QqypFEo3vDjVLt2O8o0Ed9sBuaji4SDZGS4ze82e+lxf/ryx9D/DZ31lXbr6h53X4tT6u8p4bR8Te5PJthvvPjKZkc5UsaaS/2Y4oLtEUDLNinDE6MhM/+TS3+9D+Xsbta4aYGbuIlUyqv/2zN+4sQ1BbllOU/RoVcsU=
+  gem: sensu-plugins-ansible
+  on:
+    tags: true
+    repo: sensu-plugins/sensu-plugins-ansible
+    all_branches: true
+    rvm: 1.9.3
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
