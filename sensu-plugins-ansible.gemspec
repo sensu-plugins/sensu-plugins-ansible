@@ -13,11 +13,11 @@ end
 
 Gem::Specification.new do |s|
   s.authors                = ['Sensu-Plugins and contributors']
-  s.cert_chain             = ['certs/sensu-plugins.pem']
+  # s.cert_chain             = ['certs/sensu-plugins.pem']
   s.date                   = Date.today.to_s
   s.description            = 'Sensu plugins for Ansible configuration management tool'
   s.email                  = '<sensu-users@googlegroups.com>'
-  s.executables            = Dir.glob('bin/**/*').map { |file| File.basename(file) }
+  s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
   s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-ansible'
   s.license                = 'MIT'

@@ -3,7 +3,7 @@ sudo: required
 cache:
 - bundler
 before_install:
-  - sudo apt-get install libgmp3-dev
+- sudo apt-get install libgmp3-dev
 install:
 - bundle install
 rvm:
@@ -24,7 +24,7 @@ script:
 deploy:
   provider: rubygems
   api_key:
-    secure: fps99s2QqypFEo3vDjVLt2O8o0Ed9sBuaji4SDZGS4ze82e+lxf/ryx9D/DZ31lXbr6h53X4tT6u8p4bR8Te5PJthvvPjKZkc5UsaaS/2Y4oLtEUDLNinDE6MhM/+TS3+9D+Xsbta4aYGbuIlUyqv/2zN+4sQ1BbllOU/RoVcsU=
+    secure: 4O9pjHK4eZtsZ3JhQVIOjB6f/rs49B819KgjtxxDcucxgzFlM0ML70DMxQLylrhyH0qqGiItrMrEOMqPQU7UVL3Ki7AthnA06uTtGBwyNLGYk+aupBCksUSTbLybaOk2zKybrQZ2xzJFxF+yfbIthOJEYZt+O6bSe0tn985pOH8=
   gem: sensu-plugins-ansible
   on:
     tags: true
@@ -34,3 +34,4 @@ deploy:
     rvm: 2.0
     rvm: 2.1
     rvm: 2.2
+
