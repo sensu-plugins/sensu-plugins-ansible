@@ -21,7 +21,6 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Added
 - initial release
 
-
 [Unreleased]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.4...HEAD
 [0.0.4]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.3...0.0.4
 [0.0.3]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.2...0.0.3
