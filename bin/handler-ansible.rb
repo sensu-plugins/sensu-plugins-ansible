@@ -1,4 +1,6 @@
 #! /usr/bin/env ruby
+# frozen_string_literal: true
+
 #
 # handler-ansible.rb
 #
@@ -52,7 +54,7 @@ class Ansible < Sensu::Handler
     command = "#{ansible} -e '#{extra_vars}' #{playbook}"
     output = `#{command}`
 
-    if $CHILD_STATUS.exitstatus > 0
+    if $CHILD_STATUS.exitstatus.positive?
       puts output
       exit 1
     else
