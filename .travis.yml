@@ -4,14 +4,15 @@ cache:
 - bundler
 before_install:
   - sudo apt-get install libgmp3-dev
-  - gem update bundler
+  - gem install bundler -v '1.14.3'
 install:
 - bundle install
 rvm:
-- 1.9.3
 - 2.0
 - 2.1
 - 2.2
+- 2.3.0
+- 2.4.1
 notifications:
   email:
     recipients:
@@ -31,8 +32,8 @@ deploy:
     tags: true
     repo: sensu-plugins/sensu-plugins-ansible
     all_branches: true
-    rvm: 1.9.3
     rvm: 2.0
     rvm: 2.1
     rvm: 2.2
-
+    rvm: 2.3.0
+    rvm: 2.4.1
