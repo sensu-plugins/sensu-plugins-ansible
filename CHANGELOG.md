@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
+
+## [3.0.0] - 2018-12-08
 ### Breaking Changes
 - update sensu-plugin to 3.0 https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#300---2018-12-04 @jaredledvina
 
@@ -47,7 +49,8 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/3.0.0...HEAD
+[3.0.0]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/2.0.0...3.0.0
 [2.0.0]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/1.0.0..2.0.0
 [1.0.0]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.4...1.0.0
 [0.0.4]: https://github.com/sensu-plugins/sensu-plugins-ansible/compare/0.0.3...0.0.4
