@@ -7,6 +7,9 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 ### Breaking Changes
 - Drop Ruby 2.1 and 2.2 support as they have been EOL'ed (@jaredledvina)
 
+### Changed:
+- Add Ruby 2.5.3 to TravisCI build configuration (@jaredledvina)
+
 ## [3.0.0] - 2018-12-08
 ### Breaking Changes
 - update sensu-plugin to 3.0 https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#300---2018-12-04 @jaredledvina
