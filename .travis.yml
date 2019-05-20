@@ -4,6 +4,7 @@ cache:
 - bundler
 before_install:
   - sudo apt-get install libgmp3-dev
+  - gem update --system
   - gem install bundler -v '2.0'
 install:
 - bundle install
