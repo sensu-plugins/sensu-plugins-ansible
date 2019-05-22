@@ -9,7 +9,7 @@ require_relative 'lib/sensu-plugins-ansible'
 
 # pvt_key = 'certs/gem-private_key.pem'
 
-Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
+Gem::Specification.new do |s|
   s.authors                = ['Sensu-Plugins and contributors']
   s.date                   = Date.today.to_s
   s.description            = 'Sensu plugins for Ansible configuration management tool'
@@ -18,11 +18,13 @@ Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w[LICENSE README.md CHANGELOG.md]
   s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-ansible'
   s.license                = 'MIT'
-  s.metadata               = { 'maintainer'         => 'sensu-plugin',
-                               'development_status' => 'active',
-                               'production_status'  => 'unstable - testing recommended',
-                               'release_draft'      => 'false',
-                               'release_prerelease' => 'false' }
+  s.metadata               = {
+    'maintainer' => 'sensu-plugin',
+    'development_status' => 'active',
+    'production_status' => 'unstable - testing recommended',
+    'release_draft' => 'false',
+    'release_prerelease' => 'false'
+  }
   s.name                   = 'sensu-plugins-ansible'
   s.platform               = Gem::Platform::RUBY
   s.post_install_message   = 'You can use the embedded Ruby by setting EMBEDDED_RUBY=true in /etc/default/sensu'
